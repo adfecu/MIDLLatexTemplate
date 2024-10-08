@@ -131,9 +131,30 @@ $y\leftarrow 0$\;
 
 \section{Related works}
 
+\cite{OShea:2023:WSS}
+\cite{Feng:2017:WSS}
+\cite{Feng:2023:WSS}
+
 \section{Methods}
 
+\subsection{Weak supervision}
+\subsection{Multiple instance learning}
+
 \section{Experimental setting}
+
+\subsection{Dataset}
+
+We evaluated the proposed method on the LIDC-IDRI database \cite{LIDC-IDRI}. Therefore, 1010 CT scans, including 7371 nodules, are used to train and test the proposed nodule segmentation method.
+
+In the preprocessing stage of the dataset, the content of CT values in the input image is screened and cut to between -1000Hu and 400Hu to remove irrelevant information and noise, such as air and water.
+
+\subsection{Metrics}
+
+Accuracy, F1 Score, Precision, Recall, Dice Score, IoU Score, Jaccard Index, ROC curve, FROC curve
+
+\subsection{Tools}
+
+Python 3.12.4, PyTorch 2.4.0, Torchvision 0.19.0, pydicom 3.0.1
 
 \section{Results}
 
